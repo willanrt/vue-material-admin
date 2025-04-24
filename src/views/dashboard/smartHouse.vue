@@ -55,13 +55,13 @@
                                 </v-avatar>
                                 <div style="flex: 1; text-align: right">
                                     <v-card-title class="text-h5">
-                                        ShenZhen <v-icon icon="mdi-map-marker-outline" size="24" />
+                                        ZhuHai <v-icon icon="mdi-map-marker-outline" size="24" />
                                     </v-card-title>
 
-                                    <v-card-subtitle class="">Cloudy To Clear</v-card-subtitle>
+                                    <v-card-subtitle class="">⛅->☀️</v-card-subtitle>
 
                                     <div class="py-0 mr-4">
-                                        <span class="text-h3">26&deg;</span
+                                        <span class="text-h3">28&deg;</span
                                         ><span class="text-h6">C</span>
                                     </div>
                                 </div>
