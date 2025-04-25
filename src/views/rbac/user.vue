@@ -66,8 +66,16 @@
                     </td>
                     <td>
                         <!-- <v-switch v-model="item.enable" color="primary" hide-details></v-switch> -->
-                        <v-chip v-if="item.enable" color="green" @click="usersEvent.onShowRole(item)"> Enable </v-chip>
-                        <v-chip v-else color="red" @click="usersEvent.onShowRole(item)">Disable</v-chip>
+                        <v-chip
+                            v-if="item.enable"
+                            color="green"
+                            @click="usersEvent.onShowRole(item)"
+                        >
+                            Enable
+                        </v-chip>
+                        <v-chip v-else color="red" @click="usersEvent.onShowRole(item)"
+                            >Disable</v-chip
+                        >
                     </td>
                     <td>
                         <v-dialog max-width="340">
@@ -84,7 +92,10 @@
                                 </v-btn>
                             </template>
                             <template v-slot:default="{ isActive }">
-                                <v-card text="Cannot be restored after deletion" :title="'Delete ' + item.username">
+                                <v-card
+                                    text="Cannot be restored after deletion"
+                                    :title="'Delete ' + item.username"
+                                >
                                     <template v-slot:actions>
                                         <v-btn
                                             class="ml-auto"
@@ -112,9 +123,15 @@
     <v-dialog width="700" v-model="usersEvent.data.visible">
         <v-card>
             <v-toolbar color="transparent">
-                <v-toolbar-title class="text-h6" :text="usersEvent.data.dialogTitle"> </v-toolbar-title>
+                <v-toolbar-title class="text-h6" :text="usersEvent.data.dialogTitle">
+                </v-toolbar-title>
                 <template v-slot:append>
-                    <v-btn type="submit" variant="text" @click="usersEvent.data.visible = false" icon="mdi-close" />
+                    <v-btn
+                        type="submit"
+                        variant="text"
+                        @click="usersEvent.data.visible = false"
+                        icon="mdi-close"
+                    />
                 </template>
             </v-toolbar>
             <v-sheet width="500" class="ma-10 mx-auto">
